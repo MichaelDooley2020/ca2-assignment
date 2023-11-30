@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+{% block metadescription %}
+    {% if category %}
+        {{ category.description|truncatewords:155 }}
+    {% else %}
+        Let us help you go on a Adventure!
+    {% endif %}
+{% endblock %}
+{% block title %}
+    {% if category %}
+        {{ category.name }} - Adventure Store
+    {% else %}
+        Choose From Our Collection of Options - Adventure Store
+    {% endif %}
+{% endblock %}
+{% block content %}
+    <!--Breadcrumb Navigation-->
+    {% if category %}
+        <div>
+            <div>
+                <p><a href="{% url 'shopapp:all_products' %}">Our Product Collection</a> | {{category.name}}</p>
+            </div>
+        </div>
+    {% endif %}
+    <div>
+        {% if category %}
+            <img src="{{category.image.url}}" alt="{{category.name}}">
+        </div>
+        <br>
+        <div>
+            <h1>{{category.name}}</h1>
+            <p>{{category.description}}</p>
+        </div>
+    {% else %}
+        <img src="{% static 'images/banner.jpg' %}" alt="Our Products Collection">
+    </div>
+    <br>
+    <div>
+        <h1>Our Adventure Products</h1>
+        <p>At our company, we are deeply committed to delivering nothing short of the highest quality products. 
+            Our mission is to enhance your experiences and adventures, 
+            whether you’re skiing or trekking through a hiking trail. 
+            We understand that each adventure is unique and filled with 
+            its own challenges and joys. That’s why we design our products to not only meet but exceed your expectations.</p>
+    </div>
+    {% endif %}
+    <div>
+        <div>
+            {% for product in prods %}
+                <div>
+                    <div>
+                        <a class="img" href=""><img src="{{product.image.url}}" alt="{{product.name}}"></a>
+                        <div>
+                            <h4>{{product.name}}</h4>
+                            <p>€{{product.price}}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <br>
+    </div>
+{% endblock %}
