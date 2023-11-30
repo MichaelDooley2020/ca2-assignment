@@ -30,7 +30,6 @@ class Product(models.Model):
         editable=False)
     name = models.CharField(max_length=250, unique=True)
     description = models.TextField(blank = True)
-    size = models.CharField(max_length=50, default='small')
     gender = models.BinaryField(blank=True, null=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     price = models.DecimalField(max_digits=10, decimal_places=2)
