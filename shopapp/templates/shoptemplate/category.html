@@ -17,41 +17,41 @@
 {% block content %}
     <!--Breadcrumb Navigation-->
     {% if category %}
-        <div>
-            <div>
+        <div class="row my_row_class">
+            <div class="mx-auto">
                 <p><a href="{% url 'shopapp:all_products' %}">Our Product Collection</a> | {{category.name}}</p>
             </div>
         </div>
     {% endif %}
-    <div>
+    <div class="mx-auto">
         {% if category %}
-            <img src="{{category.image.url}}" alt="{{category.name}}">
+            <img class="my_image" src="{{category.image.url}}" alt="{{category.name}}">
         </div>
         <br>
         <div>
-            <h1>{{category.name}}</h1>
-            <p>{{category.description}}</p>
+            <h1 class="text-center my_title">{{category.name}}</h1>
+            <p class="text-justify">{{category.description}}</p>
         </div>
     {% else %}
-        <img src="{% static 'images/banner.jpg' %}" alt="Our Products Collection">
+        <img class="my_image my_image_padding" src="{% static 'images/banner.jpg' %}" alt="Our Products Collection">
     </div>
     <br>
     <div>
-        <h1>Our Adventure Products</h1>
-        <p>At our company, we are deeply committed to delivering nothing short of the highest quality products. 
+        <h1 class="text-center my_title">Our Adventure Products</h1>
+        <p class="text-justify">At our company, we are deeply committed to delivering nothing short of the highest quality products. 
             Our mission is to enhance your experiences and adventures, 
-            whether you’re skiing or trekking through a hiking trail. 
+            whether you are skiing or trekking through a hiking trail. 
             We understand that each adventure is unique and filled with 
-            its own challenges and joys. That’s why we design our products to not only meet but exceed your expectations.</p>
+            its own challenges and joys. That is why we design our products to not only meet but exceed your expectations.</p>
     </div>
     {% endif %}
-    <div>
-        <div>
+    <div class="container">
+        <div class="my_bottom_margin col-9 col-lg-4 col-sm-12 col-md-4">
             {% for product in prods %}
-                <div>
-                    <div>
+                <div class="my_bottom_margin col-9 col-lg-4 col-sm-12 col-md-4">
+                    <div class="card text-center" style="min-width: 18rem;">
                         <a class="img" href="{{product.get_absolute_url}}"><img src="{{product.image.url}}" alt="{{product.name}}"></a>
-                        <div>
+                        <div class="card-body">
                             <h4>{{product.name}}</h4>
                             <p>€{{product.price}}</p>
                         </div>
