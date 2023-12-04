@@ -31,7 +31,7 @@
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: .2em;
-    background-color: #7092BE!important;
+    background-color: #f8f9fa!important;
 }
 
 .custom_image {
@@ -45,7 +45,7 @@
 
 .custom_icon {
     text-decoration: none;
-    color: #7092BE !important;
+    color: #868e96 !important;
 }
 
 .my_custom_button {
