@@ -5,9 +5,9 @@ Order Details - Adventure Store
 {% endblock %}
 {% block content %}
 <div>
-    <div class="text-center">
+    <div style="background-color: rgb(116, 162, 47);" class="text-center">
         <br>
-        <h1 class="text-center my_title">Order Details</h1>
+        <h1 style="background-color: rgb(116, 162, 47);" class="text-center my_title">Order Details</h1>
         <br>
         <table class="table table-bordered">
             <tr>
@@ -27,26 +27,26 @@ Order Details - Adventure Store
                 </td>
             </tr>
             <tr>
-                <td><b>Product Description</b></td>
-                <td><b>Qty</b></td>
-                <td><b>Unit Price</b></td>
-                <td><b>Sub-Total</b></td>
+                <td style="background-color: burlywood;"><b>Product Description</b></td>
+                <td style="background-color: burlywood;"><b>Qty</b></td>
+                <td style="background-color: burlywood;"><b>Unit Price</b></td>
+                <td style="background-color: burlywood;"><b>Sub-Total</b></td>
             </tr>
             {% for item in order_items %}
             <tr>
-                <td>{{ item.product }}</td>
-                <td>{{ item.quantity }}</td>
-                <td>€{{ item.price }}</td>
-                <td>€{{ item.sub_total }}</td>
+                <td style="background-color: rgb(186, 144, 65);">{{ item.product }}</td>
+                <td style="background-color: rgb(186, 144, 65);">{{ item.quantity }}</td>
+                <td style="background-color: rgb(186, 144, 65);">€{{ item.price }}</td>
+                <td style="background-color: rgb(186, 144, 65);">€{{ item.sub_total }}</td>
             </tr>
             {% endfor %}
             <tr>
-                <td class="text-right" colspan="3"><b>Total</b></td>
-                <td>€{{ order.total }}</td>
+                <td style="background-color: rgb(4, 149, 149);" class="text-right" colspan="3"><b>Total</b></td>
+                <td style="background-color: teal;">€{{ order.total }}</td>
             </tr>
             <tr>
-                <td class="text-right" colspan="3"><b>Total Paid</b></td>
-                <td>€{{ order.total }}</td>
+                <td style="background-color: rgb(4, 149, 149);" class="text-right" colspan="3"><b>Total Paid</b></td>
+                <td style="background-color: teal;">€{{ order.total }}</td>
             </tr>
             <tr>
                 <td class="text-left" colspan="2">
@@ -65,4 +65,7 @@ Order Details - Adventure Store
         </table>
     </div>
 </div>
+<style>
+
+</style>
 {% endblock content %}
