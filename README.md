@@ -18,3 +18,8 @@ Custom User Model
 
 Aoife Griffin:
 
+CORE FUNCTIONALITY:
+Search Functionality
+Shopping Cart (Add, Remove, Empty)
+
+
