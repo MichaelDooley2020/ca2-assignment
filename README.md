@@ -13,6 +13,13 @@ Michael Dooley Esquivel:
 
 CORE FUNCTIONALITY:
 Custom User Model
+Django Admin
+Use of Static assets & images
+Stripe Payment
+
+Web site structure & Web Page Design:
+Bootstrap5
+External CSS
 
 --------------------------------------
 
