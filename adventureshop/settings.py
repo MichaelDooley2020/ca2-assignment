@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'shopapp',
     'search_app',
     'cart',
+    'stripe',
 ]
 
 MIDDLEWARE = [
@@ -137,3 +138,6 @@ MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'users.CustomUser'
+
+STRIPE_SECRET_KEY = 'sk_test_51OCK34IJChdQO3k8FJgdTPRJHKeIBswKGEyc8vAk2Y9TAGt3PPNeZx6dr2DZtOQm20SEcrx9tmbxNw2nUCOMTkD900mPIxQb9n'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51OCK34IJChdQO3k86brcFpPyStjoRi8rgK5MSru41R8XqkUPrWSZLs1qMDaw6m88tkdHcWBAvs5B8DTM5vDAqLGG00vhJqvtdk'
