@@ -12,11 +12,13 @@
 </head>
 <body style="background-color: #7092BE;">
     <div class="container">
+        <div class="container-fluid bg-light navbar-fixed-top my_top_navbar_div">
+            {% include 'top-navbar.html' %}
+        </div>
         {% include 'header.html' %}
         {% include 'navbar.html' %}
         {% block content %}
         {% endblock %}
-    
         {% include 'footer.html' %}
     </div>
     <!-- JavaScript Bundle with Popper -->
