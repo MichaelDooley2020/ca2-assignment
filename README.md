@@ -27,6 +27,11 @@ Aoife Griffin:
 
 CORE FUNCTIONALITY:
 Search Functionality
-Shopping Cart (Add, Remove, Empty)
+Implementation of Shopping Cart
+Session Framework
+
+Web Site Structure & Web Page Design:
+Bootstrap5
+External CSS
 
 
