@@ -16,6 +16,7 @@ Custom User Model
 Django Admin
 Use of Static assets & images
 Stripe Payment
+Sign in, Sign up
 
 Web site structure & Web Page Design:
 Bootstrap5
