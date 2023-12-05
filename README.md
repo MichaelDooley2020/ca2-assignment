@@ -21,6 +21,8 @@ Web site structure & Web Page Design:
 Bootstrap5
 External CSS
 
+Website Deployment
+
 --------------------------------------
 
 Aoife Griffin:

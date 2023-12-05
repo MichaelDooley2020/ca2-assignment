@@ -36,7 +36,7 @@
         <img class="my_image my_image_padding" src="{% static 'images/banner.jpg' %}" alt="Our Products Collection">
     </div>
     <br>
-    <div>
+    <div style="background-color: rgb(122, 227, 185); border-radius: 0.5em;">
         <h1 class="text-center my_title">Our Adventure Products</h1>
         <p class="text-justify">At our company, we are deeply committed to delivering nothing short of the highest quality products. 
             Our mission is to enhance your experiences and adventures, 
@@ -51,7 +51,7 @@
                 <div class="my_bottom_margin col-9 col-lg-4 col-sm-12 col-md-4">
                     <div class="card text-center" style="min-width: 18rem;">
                         <a class="img" href="{{product.get_absolute_url}}"><img class="card-img-top my_image" src="{{product.image.url}}" alt="{{product.name}}"></a>
-                            <div style="background-color: wheat;" class="card-body">
+                            <div style="background-color: #889859;" class="card-body">
                                 <h4>{{product.name}}</h4>
                                 <p>€{{product.price}}</p>
                             </div>
